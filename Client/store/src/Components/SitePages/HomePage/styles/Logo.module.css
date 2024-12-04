@@ -1,0 +1,17 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  color: var(--accent-color, #d88c56);
+  font: 500 32px Playfair, sans-serif;
+}
+
+.logoImage {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  width: 74px;
+}
+
+.logoText {
+  margin-left: 10px;
+}

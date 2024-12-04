@@ -1,0 +1,283 @@
+/* [Previous CSS content with updated class names and organization, maintaining all original styles and media queries] */
+
+/* General Page Styling */
+.homePage {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actionIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.actionIcon:hover {
+  transform: scale(1.1);
+}
+
+.cartContainer {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Hero Section Styling */
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+.heroText {
+  flex: 1; /* Takes up half of the available space */
+  padding: 20px;
+}
+
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #555;
+  line-height: 1.5;
+}
+.ctaButton {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #e85a4f;
+}
+
+.heroImageContainer {
+  flex: 1; /* Takes up the other half of the available space */
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #f1f1f1;
+  color: rgb(39, 39, 39);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.newsletterSection {
+  max-width: 400px;
+  text-align: left;
+}
+
+.newsletterTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.privacyNote {
+  font-size: 0.9rem;
+  color: #353535;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 40px;
+  justify-content: first baseline;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-items: auto;
+  flex: 1;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  justify-content: left;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #272727;
+}
+
+/* Product Section */
+.productSection {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  justify-content: center;
+}
+
+.filterText {
+  font-size: 16px;
+  color: #333;
+}
+
+.filterDropdown {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filterDropdown:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none;
+}
+
+
+
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+  gap: 20px; /* Space between cards */
+}
+
+
+
+.seeAllButton {
+  margin: 30px auto;
+  display: block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seeAllButton:hover {
+  background-color: #e85a4f;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.aboutText::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6f61;
+}
