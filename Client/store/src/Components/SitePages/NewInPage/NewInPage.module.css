@@ -1,0 +1,173 @@
+.container {
+  background: var(--bg-color, #eae4f2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.breadcrumb {
+  display: flex;
+  width: 100%;
+  max-width: 1172px;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  color: #000;
+  margin: 24px 0 0 80px;
+}
+
+.pageTitle {
+  align-self: center;
+  margin: 38px 0 0 55px;
+  font: 700 32px Playfair, sans-serif;
+}
+
+.itemCount {
+  align-self: end;
+  margin-top: 137px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+/* .filterSection {
+  align-self: center;
+  z-index: 10;
+  display: flex;
+  margin-top: -68px;
+  width: 100%;
+  max-width: 1276px;
+  flex-direction: column;
+}
+
+.filterBar {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  min-height: 98px;
+  width: 644px;
+  max-width: 100%;
+  align-items: center;
+  gap: 40px 204px;
+  font-size: 20px;
+  color: var(--texts, #232323);
+  font-weight: 600;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 37px 10px;
+}
+
+.filterIcon {
+  aspect-ratio: 1.95;
+  object-fit: contain;
+  object-position: center;
+  width: 35px;
+}
+
+.productGrid {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  flex-direction: column;
+} */
+
+.productRow {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  align-self: center;
+  display: flex;
+  margin-top: 48px;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.nextButton {
+  align-self: stretch;
+  background: var(--sec-color, #f8c4d0);
+  min-height: 44px;
+  color: var(--texts, #232323);
+  width: 110px;
+  margin: auto 0;
+  padding: 14px 10px;
+}
+
+@media (max-width: 991px) {
+  .breadcrumb {
+    max-width: 100%;
+  }
+
+  .itemCount {
+    margin-top: 40px;
+  }
+
+  .filterSection {
+    max-width: 100%;
+  }
+
+  .productGrid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .productRow {
+    max-width: 100%;
+  }
+
+  .pagination {
+    margin-top: 40px;
+  }
+
+  .nextButton {
+    white-space: initial;
+  }
+}
+
+/* Product Section */
+.productSection {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.filterBar {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  justify-content: center;
+}
+
+.filterText {
+  font-size: 16px;
+  color: #333;
+}
+
+.filterDropdown {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filterDropdown:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  outline: none;
+}
+
+
+
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+  gap: 20px; /* Space between cards */
+}

@@ -2,3 +2,17 @@
   color: blue;
   text-decoration: none;
 }
+
+.navLink {
+  padding: 10px;
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+  color: #333; /* Default color */
+}
+
+.link:hover {
+  color: #007bff; /* Highlight color on hover */
+}

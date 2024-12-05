@@ -1,0 +1,21 @@
+.newsletterContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: var(--texts, #232323);
+  justify-content: start;
+  font: 400 20px Source Sans 3, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.inputContainer {
+  border-radius: 10px;
+  border: 1px solid var(--texts, #232323);
+  background-color: #f0f0f0;
+  display: flex;
+  width: 100%;
+  padding: 14px;
+  gap: 40px 100px;
+  overflow: hidden;
+}
+
+/* Rest of the newsletter form styles */

@@ -31,48 +31,53 @@ const socialLinks = [
 const products = [
   {
     id: 1,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
     size: "Size 10",
-    price: "1900"
+    price: "1900",
   },
   {
     id: 2,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
-    size: "Size 10", 
-    price: "1900"
+    size: "Size 10",
+    price: "1900",
   },
   {
     id: 3,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/2af9cb4048b9d1218acb3fcdba7277bce05ebbf44efbd59aca2a079bc1a3a947?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/2af9cb4048b9d1218acb3fcdba7277bce05ebbf44efbd59aca2a079bc1a3a947?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
     size: "Size 10",
-    price: "1900"
+    price: "1900",
   },
   {
     id: 4,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
     size: "Size 10",
-    price: "1900"
+    price: "1900",
   },
   {
     id: 5,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
     size: "Size 10",
-    price: "1900"
+    price: "1900",
   },
   {
     id: 6,
-    image: "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9774f058ff1ea4d34ae9602aeb6a398432bc200639e04968aadda57142c11d14?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb",
     title: "Yellow Dress",
     size: "Size 10",
-    price: "1900"
-  }
+    price: "1900",
+  },
 ];
-
 
 export const HomePage = () => (
   <div className={styles.homePage}>
@@ -130,39 +135,39 @@ export const HomePage = () => (
     </section>
 
     <section className={styles.productSection}>
-        {/* <div className={styles.filterBar}>
-          <span className={styles.filterText}>Filter Items By Category Here</span>
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9f47eed36c78dd97cd0416a597bdd1b47895de2342fbf3a1b83eab831cd5d49?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb" alt="Filter" className={styles.filterIcon} />
-        </div> */}
-        <div className={styles.filterBar}>
-  <span className={styles.filterText}>Filter Items By Category Here</span>
-  <select className={styles.filterDropdown} >
-    <option value="">All Categories</option>
-    <option value="category1">Category 1</option>
-    <option value="category2">Category 2</option>
-    <option value="category3">Category 3</option>
-  </select>
-</div>
+      <div className={styles.filterBar}>
+        <span className={styles.filterText}>Filter Items By Category Here</span>
+        <select className={styles.filterDropdown}>
+          <option value="">All Categories</option>
+          <option value="category1">Category 1</option>
+          <option value="category2">Category 2</option>
+          <option value="category3">Category 3</option>
+        </select>
+      </div>
 
-        
-        <div className={styles.productGrid}>
-          {products.map(product => (
-            <ProductCard key={product.id} {...product} />
-          ))}
-        </div>
-        
-        <button className={styles.seeAllButton}>SEE ALL NEW ARRIVALS</button>
-      </section>
+      <div className={styles.productGrid}>
+        {products.map((product) => (
+          <ProductCard key={product.id} {...product} />
+        ))}
+      </div>
 
-      <section className={styles.aboutSection}>
-        <h2 className={styles.aboutTitle}>Welcome to Everyday Finds</h2>
-        <p className={styles.aboutText}>
-          At Everyday Finds, we believe every woman deserves to feel confident, stylish, and comfortable—every single day. We're here to bring you carefully curated clothing and accessories designed to celebrate your unique beauty and lifestyle.
-          From casual wear to office chic, and everything in between, our collection is all about you.
-          Our mission is to make your shopping experience seamless, transparent, and tailored to your needs.
-          Whether you're looking for the perfect outfit or simply exploring, we're here to inspire and support you every step of the way. Discover the joy of fashion made with care, just for you. 💖
-        </p>
-      </section>
+      <button className={styles.seeAllButton}>SEE ALL NEW ARRIVALS</button>
+    </section>
+
+    <section className={styles.aboutSection}>
+      <h2 className={styles.aboutTitle}>Welcome to Everyday Finds</h2>
+      <p className={styles.aboutText}>
+        At Everyday Finds, we believe every woman deserves to feel confident,
+        stylish, and comfortable—every single day. We're here to bring you
+        carefully curated clothing and accessories designed to celebrate your
+        unique beauty and lifestyle. From casual wear to office chic, and
+        everything in between, our collection is all about you. Our mission is
+        to make your shopping experience seamless, transparent, and tailored to
+        your needs. Whether you're looking for the perfect outfit or simply
+        exploring, we're here to inspire and support you every step of the way.
+        Discover the joy of fashion made with care, just for you. 💖
+      </p>
+    </section>
     <footer className={styles.footer}>
       <Logo />
       <div className={styles.footerContent}>

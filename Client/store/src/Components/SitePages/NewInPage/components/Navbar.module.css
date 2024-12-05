@@ -1,0 +1,96 @@
+.navbar {
+  background-color: rgba(249, 249, 249, 1);
+  display: flex;
+  min-height: 94px;
+  width: 100%;
+  align-items: center;
+  gap: 40px 82px;
+  font-family: Lato, sans-serif;
+  color: var(--texts, #232323);
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  color: var(--accent-color, #d88c56);
+  justify-content: start;
+  margin: auto 0;
+  font: 500 32px Playfair, sans-serif;
+}
+
+.logo {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  width: 74px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.brandName {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.navLinks {
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.navItem {
+  align-self: stretch;
+  width: 136px;
+  border-radius: 20px;
+  min-height: 44px;
+  gap: 12px;
+  margin: auto 0;
+  padding: 5px 0;
+}
+
+.cartSection {
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 40px 60px;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.cartInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    max-width: 100%;
+  }
+
+  .navLinks {
+    max-width: 100%;
+  }
+}

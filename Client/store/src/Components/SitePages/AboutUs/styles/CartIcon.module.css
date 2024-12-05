@@ -1,0 +1,21 @@
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.cartIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.cartCount {
+  align-self: stretch;
+  margin: auto 0;
+}

@@ -1,0 +1,10 @@
+.navLink {
+  align-self: stretch;
+  width: 136px;
+  border-radius: 20px;
+  min-height: 44px;
+  gap: 12px;
+  margin: auto 0;
+  padding: 5px 0;
+  font: 700 24px Caveat, sans-serif;
+}
