@@ -65,10 +65,10 @@
   padding: 5px 0;
 }
 
-.navLinkCaveat {
+/* .navLinkCaveat {
   composes: navLink;
   font: 700 24px Caveat, sans-serif;
-}
+} */
 
 .userActions {
   align-self: stretch;
@@ -177,10 +177,10 @@
   margin: auto 0;
 }
 
-.addressInfo {
+/* .addressInfo {
   composes: infoItem;
   line-height: 28px;
-}
+} */
 
 .socialSection {
   background-blend-mode: normal;

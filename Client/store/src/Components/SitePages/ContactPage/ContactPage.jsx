@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./ContactPage.module.css";
-import Navigation from "./components/Navigation";
 import ContactInfo from "./components/ContactInfo";
 import SocialLinks from "./components/SocialLinks";
 import ContactForm from "./components/ContactForm";
@@ -8,7 +7,6 @@ import ContactForm from "./components/ContactForm";
 const ContactPage = () => {
   return (
     <div className={styles.contactContainer}>
-      <Navigation />
       <div className={styles.mainContent}>
         <div className={styles.contentGrid}>
           <div className={styles.sidebarColumn}>

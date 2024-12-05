@@ -1,0 +1,63 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  color: var(--accent-color, #d88c56);
+  font: 500 32px Playfair, sans-serif;
+}
+
+.logoImage {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  width: 74px;
+}
+
+.logoText {
+  margin-left: 10px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actionIcon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.actionIcon:hover {
+  transform: scale(1.1);
+}
+
+.cartContainer {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}

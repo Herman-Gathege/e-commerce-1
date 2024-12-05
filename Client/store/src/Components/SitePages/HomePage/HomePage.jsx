@@ -5,8 +5,9 @@ import { SocialLink } from "./components/SocialLink";
 import { NewsletterForm } from "./components/NewsletterForm";
 import styles from "./styles/HomePage.module.css";
 import ProductCard from "../../ProductCard";
+import { Link } from 'react-router-dom';
 
-const navigationLinks = ["New In!", "About Us", "Contact Us"];
+
 const footerNavLinks = ["Gift Shop", "New In", "About Us", "Contact Us"];
 const officialLinks = ["Privacy", "Accessibility", "FAQs", "Terms", "Contacts"];
 const socialLinks = [
@@ -81,37 +82,7 @@ const products = [
 
 export const HomePage = () => (
   <div className={styles.homePage}>
-    <nav className={styles.navbar}>
-      <Logo />
-      <div className={styles.navLinks}>
-        {navigationLinks.map((link) => (
-          <NavigationLink key={link} text={link} />
-        ))}
-      </div>
-      <div className={styles.userActions}>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c027f92f20a54a2df688fa23656646603845d6de9a89bc8e46f06ccb1bd9d37?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb"
-          className={styles.actionIcon}
-          alt="Search"
-        />
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/aa325a82653444030e13a7c4ab4d83b72513ab5f42c4e691ed6023356fe4ff39?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb"
-          className={styles.actionIcon}
-          alt="User account"
-        />
-        <div className={styles.cartContainer}>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/87561694d3a971a27352594e50a8b89cec4b094766a508d37790c2e6d42de414?placeholderIfAbsent=true&apiKey=4954cd0778ee41b3916c35610d52c9fb"
-            className={styles.actionIcon}
-            alt="Shopping bag"
-          />
-          <div className={styles.cartCount}>Bag (2)</div>
-        </div>
-      </div>
-    </nav>
+ 
 
     <section className={styles.heroSection}>
       <div className={styles.heroContent}>
@@ -121,7 +92,8 @@ export const HomePage = () => (
             Find trendy attire at the comfort of your home, your next outfit is
             one click away.
           </p>
-          <button className={styles.ctaButton}>View Latest Collection</button>
+          <Link to='/newin'><button className={styles.ctaButton}>View Latest Collection</button></Link>
+
         </div>
         <div className={styles.heroImageContainer}>
           <img
@@ -211,3 +183,4 @@ export const HomePage = () => (
     </footer>
   </div>
 );
+

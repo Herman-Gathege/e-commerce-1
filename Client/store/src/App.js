@@ -6,7 +6,7 @@ import { HomePage } from "./Components/SitePages/HomePage/HomePage.jsx";
 import { NewInPage } from "./Components/SitePages/NewInPage/NewInPage.jsx";
 import { NavigationBar } from "./Components/NavigationBar/NavigationBar.jsx";
 import { AboutUs } from "./Components/SitePages/AboutUs/AboutUs.jsx";
-import ContactPage  from "./Components/SitePages/ContactPage/ContactPage.jsx";
+import ContactPage from "./Components/SitePages/ContactPage/ContactPage.jsx";
 
 
 
