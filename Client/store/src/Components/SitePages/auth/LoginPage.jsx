@@ -43,6 +43,7 @@ export const LoginPage = () => {
           <Button variant="secondary" onClick={handleSignupButtonClick}>
             SIGN UP NOW !
           </Button>
+          <SignupForm />
         </div>
       </div>
 
