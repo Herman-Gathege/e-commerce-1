@@ -1,0 +1,143 @@
+.signupForm {
+  justify-content: center;
+  background: var(--prim-color, #f9f9f9);
+  display: flex;
+  max-width: 602px;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+  padding: 36px 40px;
+}
+
+.formHeader {
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  align-items: center;
+  gap: 40px 100px;
+  color: var(--texts, #232323);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.formTitle {
+  font: 700 32px Playfair, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.headerIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 26px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+  width: 100%;
+}
+
+.inputLabel {
+  padding: 10px;
+  font-size: 14px;
+  color: #1a0f0e;
+}
+
+.inputField {
+  border-radius: 4px;
+  border: 1px solid var(--texts, #232323);
+  background-color: #f4f4f4;
+  min-height: 44px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.submitSection {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submitButton {
+  width: 100%;
+  border: 1px solid var(--sec-color, #f8c4d0);
+  background: var(--sec-color, #f8c4d0);
+  font-size: 20px;
+  color: var(--texts, #232323);
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formFooter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--texts, #232323);
+}
+
+.storeLink {
+  text-decoration: underline;
+  padding: 10px;
+  color: inherit;
+}
+
+.forgotLink {
+  padding: 10px;
+  margin-top: 12px;
+  color: inherit;
+}
+
+/* Modal Specific Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  position: relative;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modalContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .signupForm {
+    padding: 0 20px;
+  }
+
+  .formHeader,
+  .inputContainer,
+  .submitSection,
+  .submitButton {
+    max-width: 100%;
+  }
+}

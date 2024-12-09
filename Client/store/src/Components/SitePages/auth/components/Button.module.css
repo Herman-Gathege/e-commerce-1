@@ -1,0 +1,33 @@
+.button {
+  align-self: stretch;
+  width: 100%;
+  gap: 20px;
+  font-size: 20px;
+  color: var(--texts, #232323);
+  font-weight: 600;
+  padding: 10px;
+}
+
+.primary {
+  background: var(--sec-color, #f8c4d0);
+  background-color: var(--sec-color, #f8c4d0);
+  margin-top: 63px;
+}
+
+.secondary {
+  border: 1px solid var(--sec-color, #f8c4d0);
+  background: var(--sec-color, #f8c4d0);
+  background-color: var(--sec-color, #f8c4d0);
+}
+
+@media (max-width: 991px) {
+  .primary {
+    max-width: 100%;
+    margin-top: 40px;
+    white-space: initial;
+  }
+
+  .secondary {
+    max-width: 100%;
+  }
+}

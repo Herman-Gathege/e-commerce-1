@@ -1,0 +1,136 @@
+/* Main container for the login page */
+.loginContainer {
+  background: var(--prim-color, #f9f9f9);
+  max-width: 602px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+  padding: 48px 40px 130px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Stronger background for testing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensures the modal is on top */
+}
+
+/* Modal Container to contain the form */
+.modalContainer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  position: relative;
+  z-index: 1000; /* Keeps the content inside modal in front */
+  border: 2px solid red; /* Temporary border for visibility */
+}
+
+/* Close Button Styling */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #d88c56;
+}
+
+/* Login page styles */
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 510px;
+  align-items: center;
+  gap: 40px 100px;
+  color: var(--texts, #232323);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.title {
+  font: 700 32px Playfair, sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 26px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--texts, #232323);
+}
+
+.storeLink {
+  text-decoration: underline;
+  padding: 10px;
+  color: inherit;
+}
+
+.forgotLink {
+  padding: 10px;
+  margin-top: 12px;
+  color: inherit;
+}
+
+.signupSection {
+  display: flex;
+  margin-top: 32px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.signupText {
+  width: 123px;
+  padding: 10px;
+  font-size: 14px;
+  color: #1a0f0e;
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991px) {
+  .loginContainer {
+    padding: 0 20px 100px;
+  }
+
+  .header {
+    max-width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}

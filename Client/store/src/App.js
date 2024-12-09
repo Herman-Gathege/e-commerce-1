@@ -8,10 +8,6 @@ import { NavigationBar } from "./Components/NavigationBar/NavigationBar.jsx";
 import { AboutUs } from "./Components/SitePages/AboutUs/AboutUs.jsx";
 import ContactPage from "./Components/SitePages/ContactPage/ContactPage.jsx";
 
-
-
-
-
 function App() {
   return (
     <div>
