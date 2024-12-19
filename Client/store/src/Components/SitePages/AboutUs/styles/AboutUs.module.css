@@ -6,19 +6,4 @@
   overflow: hidden;
 }
 
-.navbar {
-  background-color: rgba(249, 249, 249, 1);
-  display: flex;
-  min-height: 94px;
-  width: 100%;
-  align-items: center;
-  gap: 40px 82px;
-  font-family: Lato, sans-serif;
-  color: var(--texts, #232323);
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 20px;
-}
-
 /* Rest of the original CSS with improved class names */

@@ -23,7 +23,7 @@ export const AboutUs = () => {
           </div>
         </div>
         <article className={styles.aboutText}>
-          {/* Content from the original long text block */}
+        At Everyday Finds, we believe that fashion is more than just clothing—it’s a form of self-expression, a confidence booster, and a way to embrace the unique beauty in every woman. That’s why we’ve made it our mission to offer thoughtfully selected clothing and accessories that bring out the best in you, no matter the occasion.
         </article>
       </main>
 

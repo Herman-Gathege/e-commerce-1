@@ -91,6 +91,8 @@ export const NewInPage = () => {
         ))}
       </div>
 
+      
+
         {/* <div className={styles.productGrid}>
           <div className={styles.productRow}>
             {products.map((product) => (
