@@ -1,0 +1,23 @@
+/* src/styles/Sales.css */
+
+.sales-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sales-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sales-item p {
+  font-size: 1rem;
+}
+
+.sales-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}

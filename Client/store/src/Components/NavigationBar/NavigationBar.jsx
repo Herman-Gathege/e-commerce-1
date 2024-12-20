@@ -1,5 +1,6 @@
 import React from "react";
 import { NavigationLink } from "../SitePages/HomePage/components/NavigationLink";
+
 import styles from "./NavigationBar.module.css";
 
 
@@ -13,6 +14,7 @@ export const NavigationBar = () => (
       alt="Everyday Finds logo"
     />    
     <NavigationLink text="Home" to="/" />
+    <NavigationLink text="Dash" to="/dashboard" />
     <NavigationLink text="New In" to="/newin" />
     <NavigationLink text="About Us" to="/aboutus" />
     <NavigationLink text="Contact Us" to="/contactus" />

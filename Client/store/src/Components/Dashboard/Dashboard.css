@@ -1,0 +1,28 @@
+/* src/styles/Dashboard.css */
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+}

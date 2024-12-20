@@ -7,6 +7,7 @@ import { NewInPage } from "./Components/SitePages/NewInPage/NewInPage.jsx";
 import { NavigationBar } from "./Components/NavigationBar/NavigationBar.jsx";
 import { AboutUs } from "./Components/SitePages/AboutUs/AboutUs.jsx";
 import ContactPage from "./Components/SitePages/ContactPage/ContactPage.jsx";
+import Dashboard from './Components/Dashboard/Dashboard.js';
 
 
 
@@ -18,7 +19,8 @@ function App() {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/dashboard" element={<Dashboard />} />  {/* Fixed this line */}
+        <Route path="/" element={<HomePage />} />
           <Route path="/newin" element={<NewInPage />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactPage />} />

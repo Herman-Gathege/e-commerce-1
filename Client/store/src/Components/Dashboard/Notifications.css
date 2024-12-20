@@ -1,0 +1,28 @@
+/* src/styles/Notifications.css */
+
+.notification-form {
+  margin-bottom: 20px;
+}
+
+.notification-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 150px;
+}
+
+.notification-form button {
+  padding: 10px;
+  background-color: #17a2b8;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-form button:hover {
+  background-color: #138496;
+}
